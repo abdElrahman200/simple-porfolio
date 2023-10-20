@@ -1,0 +1,438 @@
+*{padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+:root{
+   --c1: hsl(0, 0%, 8%);
+ --c2:hsl(0, 0%, 14%);
+ --c3:hsl(153, 71%, 59%);
+--c4:hsl(0, 0%, 100%);
+--c5:hsl(0, 0%, 85%);
+ --c6:hsl(7, 100%, 68%);
+}
+body{background-color: var(--c1);
+}
+.nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    
+    color: white;
+
+
+}
+.nav ul{display: flex;
+gap: 25px;
+width: 20px;z-index: 30;
+
+}
+.nav ul li a{
+    color: white;
+}
+/* start nav bar */
+
+/* start cont1 */
+
+
+.cont1{
+   
+    margin-top: 60px;
+    color: white;
+    border-bottom:2px solid var(--c5);
+    padding-bottom: 50px;
+    
+    
+    
+}
+.cont1 h1{
+    
+    margin-left: 110px;
+    font-size: 60px;
+}
+.cont1 span{
+    margin: 2px 0 0 150px;
+    font-size: 50px;
+    text-decoration: underline var(--c3) ;
+}
+.cont1 img{
+    position: absolute;
+    right: 300px;
+    width: 300px;
+    height: 400px;
+    top: 20px;
+    z-index: -1;
+    filter:grayscale();
+   
+   
+}
+.cont1 p{
+    margin-top: 19px;
+    margin-left: 50px;
+    font-size: 30px;
+    width: 50%;
+
+}
+.cont1 a{
+    color:white;
+    font-size: 20px;
+    text-decoration: underline var(--c3);
+    margin-left: 200px;
+}
+
+/* end cont 1 */
+
+/* start experiances */
+.experiance{margin-top: 60px;
+    position: relative;
+align-content: flex-end;
+height:400px;
+color: white;
+}
+.experiance h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline var(--c3);
+
+
+}
+.experiance .ex1{
+    position: absolute;
+    font-size: 20px;
+    left: 40%;
+}
+.experiance .ex2{
+    position: absolute;
+    font-size: 20px;
+    left: 40%;
+    top: 50%;
+}
+
+.experiance .ex3{
+    position: absolute;
+    font-size: 20px;
+    left: 80%;
+    top: 50%;
+}
+.experiance .ex4{
+    position: absolute;
+    font-size: 20px;
+    left: 80%;
+    
+}
+
+.experiance .ex5{
+    position: absolute;
+    font-size: 20px;
+    left: 2%;
+    top: 50%;
+}
+
+.experiance .ex6{
+    position: absolute;
+    font-size: 20px;
+    left: 2%;
+    
+}
+
+/* start projects */
+.projects{ color: white;
+position: absolute;
+width: 98%;
+height: 700px;
+}
+
+.projects .tit1 a{color: white; text-decoration: underline var(--c3);}
+
+.projects .tit1{text-align: center;
+text-transform: uppercase;
+font-size: 20px;}
+.projects img{
+    width: 200px;
+}
+
+.projects .im1{
+    position: absolute;
+    top: 80px;
+    left: 1%;
+}
+
+.projects .im2{
+    position: absolute;
+    top: 80px;
+    left: 40%;
+}
+
+.projects .im3{
+    position: absolute;
+    top: 80px;
+    left: 80%;
+}
+
+.projects .im4{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}
+
+.projects .im5{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.projects .im6{
+    position: absolute;
+      top: 60%;
+
+    left: 80%;
+}
+
+.projects .di:hover{
+    animation-name: myk;
+    animation-duration: 2s;
+    cursor: pointer;
+    
+}
+
+
+
+@keyframes myk{
+    20%{scale: 0.5;}
+    70%{scale: 1.5;}
+    100%{scale: 1;}
+}
+
+
+
+/* start footer */
+.footer{margin-top: 50%;
+width: 100%;
+height: 400px;
+position: relative;
+}
+.footer h1{
+position: absolute;
+top:20%; left: 10%;
+font-size: 40px;
+
+}
+.footer p{
+    
+    width: 300px;
+    position: absolute;
+top:31%; left: 10%;
+}
+
+.footer .na{ position: absolute;
+    top:30%; left: 60%;
+background-color: var(--c1);
+border: none;
+border-bottom:1px solid var(--c5) ;
+color: white;
+
+}
+
+
+    .footer .massge{ position: absolute;
+        top:40%; left: 60%;background-color: var(--c1);
+        border: none;
+        border-bottom:1px solid var(--c5) ;                    color: white;
+    }
+
+        .footer .em{ position: absolute;
+            top:50%; left: 60%;
+        background-color: var(--c1);
+border: none;
+border-bottom:1px solid var(--c5) ;                    color: white;
+}
+
+.footer .sub{
+    position: absolute;
+    top:61%; left: 60%;
+    width: 110px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: var(--c4);
+    font-size: 20px;
+    transition: 0.6s;
+    border:1px solid var(--c2);
+
+}
+.footer .sub:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+
+@media  screen and (max-width:800px) and (min-width:100px) {
+   
+    
+    
+    /* start cont1 */
+    
+    .cont1{
+       position: relative;
+        margin-top: 10px;
+        height:600px;
+        width: 500px;
+        
+        
+        
+    }
+    .cont1 h1{
+        position:absolute;
+        bottom:100px;
+        margin-left: 90px;
+        font-size: 40px;
+    }
+    .cont1 span{
+        position:relative;
+        
+        top:500px;
+        margin-left: 19%;
+        font-size: 40px;
+        text-decoration: underline var(--c3) ;
+    }
+    .cont1 img{
+        position: absolute;
+        top:0;
+        left:20%;
+    }
+    .cont1 p{
+        position:absolute;
+        bottom:0;
+        margin-left: 20px;
+        font-size: 20px;
+        width: 100%;
+    
+    }
+    .cont1 a{
+        font-size: 20px;
+        position:absolute;
+        bottom:65px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    
+    /* end cont 1 */
+    
+    /* start experiances */
+    .experiance{
+    width:530px;
+   
+    }
+  
+    
+    /* start projects */
+    .projects{ 
+    width:530px;
+    height: 2000px;
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    }
+    
+    
+    
+    .projects img{
+        width: 400px;
+        height: 400px;
+        
+    }
+    
+    .projects .im1{
+        position: absolute;
+        top: 5%;
+        left:15%
+    }
+    
+    .projects .im2{
+        position: absolute;
+        top: 30%;
+        left:15%
+
+    }
+    
+    .projects .im3{
+        top: 60%;
+        left:15%
+    }
+    
+    .projects .im4{
+        top: 90%;
+        left:15%
+    }
+    
+    .projects .im5{
+        top: 120%;
+        left:15%
+    }
+    
+    .projects .im6{
+        top: 81%;
+        left:15%
+    }
+    
+    
+    
+    
+    /* start footer */
+    .footer{
+        margin-top: 540%;
+       
+   
+    }
+    .footer h1{
+    position: absolute;
+     left: 30%;
+    font-size: 40px;
+    
+    }
+    .footer p{
+
+        width: 420px;
+    top:41px; 
+    left: 8%;
+    
+    }
+    
+    .footer .na{ 
+        top:181px; 
+        left: 8%;                    color: white;
+
+    
+}
+    
+   .footer .massge{
+    top:230px; 
+    left: 8%;
+    color: white;
+
+   }
+            .footer .em{  top:280px; 
+                left: 8% ;                    color: white;
+            }
+            
+            
+                .footer .sub{
+                    position: absolute;
+                    top:310px;; left: 8%;
+                    width: 110px;
+                    height: 50px;
+                    border-radius: 20%;
+                    background-color: var(--c4);
+                    font-size: 20px;
+                    transition: 0.6s;
+                    border:1px solid var(--c2);
+                }
+                .footer .sub:hover{
+                    background-color: blueviolet;
+                    cursor: pointer;
+                }            
+            }   
